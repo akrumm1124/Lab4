@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class Insurance {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
     System.out.println("Please enter your age, so that your insurance rate can be calculated.");
