@@ -11,39 +11,48 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author Alex
  */
-public class MainTest {
+public class BankChargesTest {
     
-    public MainTest() {
+    public BankChargesTest() {
     }
-
     @Test
     public void testCalculateChargeZero() {
         System.out.println("calculateCharge");
         int numOfChecks = 0;
-        Main.calculateCharge(numOfChecks);
+        double expResult = 10.0;
+        double result = BankCharges.calculateCharge(numOfChecks);
+        assertEquals(expResult, result);
     }
     @Test
     public void testCalculateChargeTen() {
         System.out.println("calculateCharge");
         int numOfChecks = 10;
-        Main.calculateCharge(numOfChecks);
+        double expResult = 11.0;
+        double result = BankCharges.calculateCharge(numOfChecks);
+        assertEquals(expResult, result);
     }
     @Test
     public void testCalculateChargeThirty() {
         System.out.println("calculateCharge");
         int numOfChecks = 30;
-        Main.calculateCharge(numOfChecks);
+        double expResult = 12.4;
+        double result = BankCharges.calculateCharge(numOfChecks);
+        assertEquals(expResult, result);
     }
     @Test
     public void testCalculateChargeFifty() {
         System.out.println("calculateCharge");
         int numOfChecks = 50;
-        Main.calculateCharge(numOfChecks);
+        double expResult = 13.0;
+        double result = BankCharges.calculateCharge(numOfChecks);
+        assertEquals(expResult, result);
     }
     @Test
     public void testCalculateChargeSeventy() {
         System.out.println("calculateCharge");
         int numOfChecks = 70;
-        Main.calculateCharge(numOfChecks);
+        double expResult = 12.8;
+        double result = BankCharges.calculateCharge(numOfChecks);
+        assertEquals(expResult, result);
     }
 }

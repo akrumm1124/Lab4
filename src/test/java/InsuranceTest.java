@@ -16,13 +16,13 @@ public class InsuranceTest {
     public InsuranceTest() {
     }
 
-
-
     @Test
     public void testCalculateInsurance() {
         System.out.println("calculateInsurance");
         int age = 35;
-        Insurance.calculateInsurance(age);
+        int expResult = 475;
+        int result = Insurance.calculateInsurance(age);
+        assertEquals(expResult, result);
     }
     
 }

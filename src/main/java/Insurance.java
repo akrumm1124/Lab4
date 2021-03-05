@@ -6,8 +6,9 @@ public class Insurance {
     int age = keyboard.nextInt();
     calculateInsurance(age);
     }
-    public static void calculateInsurance (int age) {
+    public static int calculateInsurance (int age) {
         int insurancePrice = (age * 5) + 300;
         System.out.println("Since you are " + age + " years old, your insurance will cost $" + insurancePrice + " per year.");
+       return insurancePrice;
     }
 }
